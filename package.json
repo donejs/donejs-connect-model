@@ -1,0 +1,39 @@
+{
+  "name": "donejs-connect-model",
+  "version": "0.0.0",
+  "description": "Generates a more-verbose can-connect supermodel",
+  "homepage": "https://github.com/donejs/donejs-connect-model",
+  "author": {
+    "name": "Marshall Thompson",
+    "email": "marshall@creativeideal.net",
+    "url": ""
+  },
+  "license": "MIT",
+  "main": "lib/",
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint test/. default/index.js --config",
+    "mocha": "mocha test/ --timeout 120000",
+    "publish": "git push origin --tags && git push origin",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "keywords": [
+    "donejs",
+    "can",
+    "connect",
+    "generator",
+    "supermodel"
+  ],
+  "dependencies": {
+    "lodash": "^4.11.1",
+    "yeoman-generator": "^0.22.6"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5",
+    "yeoman-assert": "^2.2.1",
+    "yeoman-test": "^1.1.0"
+  }
+}
