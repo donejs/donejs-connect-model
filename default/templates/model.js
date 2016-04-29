@@ -27,19 +27,9 @@ var behaviors = [
   'data-inline-cache',
   'data-parse',
   'data-url',
-  'constructor-callbacks-once'
+  'constructor-callbacks-once',
+  'fall-through-cache'
 ];
-
-if(typeof localStorage !== "undefined") {
-	if(!options.cacheConnection) {
-		options.cacheConnection = connect(["data-localstorage-cache"],{
-			name: options.name+"Cache",
-			idProp: options.idProp,
-			algebra: options.algebra
-		});
-	}
-	behaviors.push("fall-through-cache");
-}
 
 export const <%= className %> = can.Map.extend(<%= className %>, {
   define: {}
@@ -49,14 +39,22 @@ export const <%= className %> = can.Map.extend(<%= className %>, {
   Map: <%= className %>
 }, {});
 
-export const <%= name %>Connection = connect(behaviors, {
+let options = {
   ajax: $.ajax,
   url: '<%= url %>',
   idProp: '<%= idProp %>',
   Map: <%= className %>,
   List: <%= className %>.List,
   name: '<%= name %>'
+};
+
+options.cacheConnection= connect(["data-localstorage-cache"],{
+  name: "<%= name %>Cache",
+  idProp: options.idProp,
+  algebra: options.algebra
 });
+
+export const <%= name %>Connection = connect(behaviors, options);
 
 tag('<%= name %>-model', <%= name %>Connection);
 
