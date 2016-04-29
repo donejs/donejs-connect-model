@@ -1,12 +1,12 @@
 {
   "name": "donejs-connect-model",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generates a more-verbose can-connect supermodel",
   "homepage": "https://github.com/donejs/donejs-connect-model",
   "author": {
     "name": "Marshall Thompson",
     "email": "marshall@creativeideal.net",
-    "url": ""
+    "url": "https://github.com/marshallswain"
   },
   "license": "MIT",
   "main": "lib/",
