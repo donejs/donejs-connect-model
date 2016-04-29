@@ -10,7 +10,7 @@ Generates a more verbose can-connect supermodel
 To add this generator to your DoneJS application, run
 
 ```
-donejs add connect-model
+donejs add connect-model [name]
 ```
 
 ## Developing
