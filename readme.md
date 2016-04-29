@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/donejs/donejs-connect-model.svg?branch=master)](https://travis-ci.org/donejs/donejs-connect-model)
 [![npm version](https://badge.fury.io/js/donejs-connect-model.svg)](http://badge.fury.io/js/donejs-connect-model)
 
-Generates a more-verbose can-connect supermodel
+Generates a more verbose can-connect supermodel
 
 ## Using the generator
 

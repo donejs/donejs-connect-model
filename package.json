@@ -1,7 +1,7 @@
 {
   "name": "donejs-connect-model",
   "version": "0.1.0",
-  "description": "Generates a more-verbose can-connect supermodel",
+  "description": "Generates a more verbose can-connect supermodel",
   "homepage": "https://github.com/donejs/donejs-connect-model",
   "author": {
     "name": "Marshall Thompson",
