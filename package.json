@@ -33,6 +33,7 @@
   "devDependencies": {
     "fs-extra": "^0.30.0",
     "jshint": "^2.9.2",
+    "lodash.upperfirst": "^4.2.0",
     "mocha": "^2.4.5",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.1.0"
