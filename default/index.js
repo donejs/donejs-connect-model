@@ -4,6 +4,7 @@ var _ = require('lodash');
 var utils = require('../lib/utils');
 var upperFirst = require("lodash.upperfirst");
 var utils = require('../lib/utils');
+var pluralize = require('pluralize');
 
 module.exports = generators.Base.extend({
   templatePath: utils.templatePath(path.join('.donejs', 'templates', 'supermodel')),
@@ -33,14 +34,14 @@ module.exports = generators.Base.extend({
 			name: 'name',
 			type: String,
 			required: true,
-			message: 'The name for your model (e.g. order)',
+			message: 'The singular name for your model (e.g. order)',
 			when: !this.name
 		}, function (first) {
 			var name = this.name = this.name || first.name;
 			var prompts = [{
 				name: 'url',
 				message: 'What is the URL endpoint?',
-				default: '/' + name
+				default: '/' + pluralize(name)
 			}, {
 				name: 'idProp',
 				message: 'What is the property name of the id?',
