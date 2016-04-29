@@ -3,6 +3,10 @@
   "version": "0.1.2",
   "description": "Generates a more verbose can-connect supermodel",
   "homepage": "https://github.com/donejs/donejs-connect-model",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/donejs/donejs-connect-model.git"
+  },
   "author": {
     "name": "Marshall Thompson",
     "email": "marshall@creativeideal.net",
