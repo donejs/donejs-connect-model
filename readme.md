@@ -40,7 +40,7 @@ import 'can-connect/data/callbacks/';
 import 'can-connect/data/callbacks-cache/';
 import 'can-connect/data/combine-requests/';
 import 'can-connect/data/inline-cache/';
-import "can-connect/data/localstorage-cache/";
+import 'can-connect/data/localstorage-cache/';
 import 'can-connect/data/parse/';
 import 'can-connect/data/url/';
 import 'can-connect/fall-through-cache/';
@@ -77,8 +77,8 @@ let options = {
   name: 'order'
 };
 
-options.cacheConnection= connect(["data-localstorage-cache"],{
-  name: "orderCache",
+options.cacheConnection= connect(['data-localstorage-cache'],{
+  name: 'orderCache',
   idProp: options.idProp,
   algebra: options.algebra
 });
