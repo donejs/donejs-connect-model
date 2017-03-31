@@ -1,5 +1,7 @@
 # donejs-connect-model
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/donejs/donejs-connect-model.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/donejs/donejs-connect-model.svg?branch=master)](https://travis-ci.org/donejs/donejs-connect-model)
 [![npm version](https://badge.fury.io/js/donejs-connect-model.svg)](http://badge.fury.io/js/donejs-connect-model)
 
